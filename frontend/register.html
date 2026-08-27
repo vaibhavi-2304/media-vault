@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Vault - Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-card">
+    <h1>Create account</h1>
+    <p class="muted">Get 500 MB of storage</p>
+
+    <form id="registerForm">
+      <label>Name</label>
+      <input id="name" required>
+
+      <label>Email</label>
+      <input id="email" type="email" required>
+
+      <label>Password</label>
+      <input id="password" type="password" minlength="8" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p id="message" class="message"></p>
+    <p>Already registered? <a href="index.html">Login</a></p>
+  </main>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

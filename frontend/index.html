@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Vault - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-card">
+    <h1>Media Vault</h1>
+    <p class="muted">Secure cloud document manager</p>
+
+    <form id="loginForm">
+      <label>Email</label>
+      <input id="email" type="email" required>
+
+      <label>Password</label>
+      <input id="password" type="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="message" class="message"></p>
+    <p>New user? <a href="register.html">Create account</a></p>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

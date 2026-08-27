@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Vault - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <strong>Media Vault</strong>
+      <span id="welcome"></span>
+    </div>
+    <button id="logoutButton" class="secondary">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="toolbar">
+      <div>
+        <button id="uploadButton">+ Upload File</button>
+        <button id="newFolderButton" class="secondary">+ New Folder</button>
+        <button id="trashButton" class="secondary">Trash</button>
+      </div>
+      <input id="fileInput" type="file" hidden>
+    </section>
+
+    <section class="storage-card">
+      <div class="row">
+        <strong>Storage</strong>
+        <span id="storageText">Loading...</span>
+      </div>
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2 id="locationTitle">My Files</h2>
+        <button id="rootButton" class="secondary">Root</button>
+      </div>
+
+      <div id="breadcrumbs"></div>
+      <div id="folders" class="grid"></div>
+      <div id="files" class="grid"></div>
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

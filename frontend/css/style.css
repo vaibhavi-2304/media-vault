@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #202124;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 16px;
+  cursor: pointer;
+  background: #222;
+  color: white;
+  font-weight: 600;
+}
+
+button.secondary {
+  background: white;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+button.danger {
+  background: #b42318;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 7px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+a {
+  color: #333;
+}
+
+.auth-card {
+  width: min(400px, 92%);
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+.topbar {
+  background: white;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard {
+  width: min(1100px, 94%);
+  margin: 25px auto;
+}
+
+.toolbar,
+.storage-card,
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress {
+  height: 12px;
+  background: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0;
+  background: #222;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fafafa;
+}
+
+.item-title {
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.item-actions {
+  display: flex;
+  gap: 7px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.item-actions button {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.muted {
+  color: #666;
+}
+
+.message {
+  min-height: 20px;
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+  }
+}
